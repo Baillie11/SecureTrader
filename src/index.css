@@ -4,9 +4,12 @@ body {
   background-color: #f4f4f4;
 }
 
+.App {
+  padding: 2em;
+}
+
 nav {
   background-color: #333;
-  color: white;
   padding: 1em;
 }
 
@@ -25,21 +28,21 @@ nav {
 .nav-list a {
   color: white;
   text-decoration: none;
+  padding: 0.5em 1em;
+  display: block;
+  transition: background-color 0.3s ease;
 }
 
 .nav-list a:hover {
-  text-decoration: underline;
-}
-
-.App {
-  padding: 2em;
+  background-color: #555;
 }
 
 form {
   margin-bottom: 2em;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="checkbox"] {
   padding: 0.5em;
   margin-right: 1em;
 }
@@ -50,6 +53,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -66,4 +70,15 @@ ul li {
   margin-bottom: 0.5em;
   padding: 1em;
   border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
 }
