@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SettingsForm from '../components/SettingsForm';
 
 const Settings = () => {
+  const [settings, setSettings] = useState({
+    enablePayments: true,
+  });
+
+  const handleUpdateSettings = (updatedSettings) => {
+    setSettings(updatedSettings);
+  };
+
   return (
     <div>
       <h2>Settings</h2>
-      <p>Configuration settings for the application.</p>
+      <SettingsForm settings={settings} onUpdateSettings={handleUpdateSettings} />
     </div>
   );
 };
