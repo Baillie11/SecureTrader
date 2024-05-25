@@ -1,5 +1,69 @@
-/* Add your global styles here */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 1em;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+.App {
+  padding: 2em;
+}
+
+form {
+  margin-bottom: 2em;
+}
+
+input[type="text"] {
+  padding: 0.5em;
+  margin-right: 1em;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: white;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  border: 1px solid #ddd;
 }
