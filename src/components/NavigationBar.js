@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './NavigationBar.css';
 
 const NavigationBar = () => {
   return (
     <nav>
-      <ul>
+      <ul className="nav-list">
         <li><Link to="/">Dashboard</Link></li>
         <li><Link to="/transactions">Transactions</Link></li>
         <li><Link to="/rules">Rules</Link></li>
