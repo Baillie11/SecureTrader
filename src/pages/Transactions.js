@@ -8,6 +8,7 @@ const Transactions = () => {
     const fetchTransactions = async () => {
       try {
         const data = await getTransactions();
+        console.log('Fetched transactions:', data); // Add this line
         setTransactions(data);
       } catch (error) {
         console.error('Error fetching transactions', error);
